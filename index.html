@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CH-7 GEOGRAPHICAL FEATURES OF ODISHA</title>
+<link rel="icon" 
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgcYO-BzQ-0zoynyvSA3qtHRbdCuT7JSHCJ0EMrvOFlw&s" 
+    type="image/x-icon">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap');
+
+  /* ── LIGHT MODE TOKENS (Default) ── */
+  :root {
+    --navy: #0d1b2a;
+    --navy2: #1b2d42;
+    --accent: #f0a500;
+    --accent2: #e07b00;
+    --blue: #1a6faf;
+    --blue2: #0e4d7a;
+    --green: #16a34a;
+    --green-light: #dcfce7;
+    --red: #dc2626;
+    --red-light: #fee2e2;
+    --text: #1e293b;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --card: #ffffff;
+    --bg: #f1f5f9;
+    --header: #0d1b2a;
+    --option-bg: #fafbfc;
+    --option-hover: #eff6ff;
+    --exp-bg: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  }
+
+  /* ── DARK MODE TOKENS ── */
+  [data-theme="dark"] {
+    --navy: #1e293b;
+    --navy2: #0f172a;
+    --accent: #f59e0b;
+    --accent2: #d97706;
+    --blue: #3b82f6;
+    --blue2: #60a5fa;
+    --green: #22c55e;
+    --green-light: #064e3b;
+    --red: #ef4444;
+    --red-light: #7f1d1d;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --border: #334155;
+    --card: #0f172a;
+    --bg: #020617;
+    --header: #020617;
+    --option-bg: #1e293b;
+    --option-hover: #334155;
+    --exp-bg: linear-gradient(135deg, #1e293b, #0f172a);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--header);
+    color: #fff;
+    padding: 0 24px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+  }
+  .header-logo { font-family: 'Rajdhani', sans-serif; font-size: 1.35rem; font-weight: 700; letter-spacing: 2px; color: var(--accent); }
+  .header-logo span { color: #fff; }
+  .header-controls { display: flex; align-items: center; gap: 15px; }
+
+  .theme-toggle-btn {
+    background: transparent; border: 1px solid var(--accent); color: var(--accent); padding: 6px 14px; border-radius: 6px; font-family: 'Nunito', sans-serif; font-weight: 700; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px;
+  }
+  .theme-toggle-btn:hover { background: rgba(240,165,0,0.15); }
+
+  .header-timer {
+    display: flex; align-items: center; gap: 8px; background: rgba(240,165,0,0.15); border: 1px solid rgba(240,165,0,0.4); border-radius: 6px; padding: 4px 12px; font-family: 'Rajdhani', sans-serif; font-size: 1.05rem; font-weight: 600; color: var(--accent);
+  }
+
+  /* ── LAYOUT (Updated for large monitors) ── */
+  .main-layout { 
+    display: flex; 
+    flex: 1; 
+    max-width: 1400px; /* Increased max-width */
+    margin: 0 auto; 
+    width: 100%; 
+    padding: 30px 24px 80px; 
+    gap: 40px; /* Increased gap to fix the 'chipka hua' look */
+  }
+
+  /* ── SCOREBOARD PANEL ── */
+  .scoreboard { 
+    width: 260px; /* Slightly wider */
+    flex-shrink: 0; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px; 
+    position: sticky; 
+    top: 90px; 
+    align-self: flex-start; 
+  }
+  .score-card { background: var(--card); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border: 1px solid var(--border); }
+  .score-card-header { background: var(--navy); color: #fff; padding: 10px 16px; font-family: 'Rajdhani', sans-serif; font-size: 0.8rem; letter-spacing: 1.5px; font-weight: 600; text-transform: uppercase; }
+  .score-table { width: 100%; border-collapse: collapse; }
+  .score-table tr { border-bottom: 1px solid var(--border); }
+  .score-table tr:last-child { border-bottom: none; }
+  .score-table td { padding: 9px 16px; font-size: 0.82rem; font-weight: 600; color: var(--text); }
+  .score-table td:last-child { text-align: right; }
+  
+  .badge { display: inline-block; min-width: 28px; padding: 2px 7px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-align: center; }
+  .badge-total   { background: var(--border); color: var(--text); }
+  .badge-attempted { background: rgba(59, 130, 246, 0.2); color: var(--blue); }
+  .badge-correct { background: var(--green-light); color: var(--green); }
+  .badge-incorrect { background: var(--red-light); color: var(--red); }
+  .badge-remaining { background: rgba(245, 158, 11, 0.2); color: var(--accent); }
+
+  .progress-wrap { padding: 10px 16px 14px; }
+  .progress-label { display: flex; justify-content: space-between; font-size: 0.72rem; font-weight: 700; color: var(--muted); margin-bottom: 6px; }
+  .progress-bar-bg { height: 7px; background: var(--border); border-radius: 99px; overflow: hidden; }
+  .progress-bar-fill { height: 100%; background: linear-gradient(90deg, var(--blue), var(--accent)); border-radius: 99px; transition: width 0.4s ease; }
+
+  /* Question Navigator */
+  .qnav-card { background: var(--card); border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.07); overflow: hidden; }
+  .qnav-header { background: var(--navy); color: #fff; padding: 10px 16px; font-family: 'Rajdhani', sans-serif; font-size: 0.8rem; letter-spacing: 1.5px; font-weight: 600; text-transform: uppercase; }
+  .qnav-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; padding: 12px; max-height: 240px; overflow-y: auto; }
+  .qnav-btn { width: 100%; aspect-ratio: 1; border: 1.5px solid var(--border); border-radius: 6px; background: var(--card); cursor: pointer; font-size: 0.7rem; font-weight: 700; color: var(--text); transition: all 0.15s; display: flex; align-items: center; justify-content: center; }
+  .qnav-btn:hover { border-color: var(--blue); color: var(--blue); }
+  .qnav-btn.current { border-color: var(--blue); background: var(--blue); color: #fff; }
+  .qnav-btn.correct { border-color: var(--green); background: var(--green-light); color: var(--green); }
+  .qnav-btn.incorrect { border-color: var(--red); background: var(--red-light); color: var(--red); }
+
+  .legend { display: flex; flex-direction: column; gap: 5px; padding: 10px 12px 12px; border-top: 1px solid var(--border); }
+  .legend-item { display: flex; align-items: center; gap: 7px; font-size: 0.7rem; color: var(--muted); font-weight: 600; }
+  .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+
+  /* ── MAIN QUESTION AREA ── */
+  .question-area { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+
+  .exam-bar { background: var(--card); border-radius: 10px; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; border: 1px solid var(--border); box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .exam-bar-title { font-family: 'Rajdhani', sans-serif; font-size: 1rem; font-weight: 700; color: var(--text); letter-spacing: 0.5px; }
+  .exam-bar-meta { font-size: 0.75rem; color: var(--muted); font-weight: 600; }
+
+  .q-category { display: inline-flex; align-items: center; gap: 5px; background: rgba(26, 111, 175, 0.1); border: 1px solid rgba(26, 111, 175, 0.3); color: var(--blue); font-size: 0.7rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.5px; text-transform: uppercase; }
+
+  .question-card { background: var(--card); border-radius: 14px; padding: 28px 32px; border: 1px solid var(--border); box-shadow: 0 2px 12px rgba(0,0,0,0.07); flex: 1; }
+  .q-top { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 22px; }
+  .q-number { background: var(--navy); color: var(--accent); font-family: 'Rajdhani', sans-serif; font-size: 1rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+  .q-text { font-size: 1.05rem; font-weight: 600; line-height: 1.6; color: var(--text); }
+  .q-hindi { font-size: 0.88rem; color: var(--muted); margin-top: 4px; font-weight: 500; }
+
+  /* Options */
+  .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 4px; }
+  
+  .option-btn { display: flex; align-items: center; gap: 12px; padding: 13px 18px; border-radius: 9px; border: 2px solid var(--border); background: var(--option-bg); cursor: pointer; text-align: left; font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--text); transition: all 0.18s; position: relative; overflow: hidden; }
+  .option-btn:hover:not(:disabled) { border-color: var(--blue); background: var(--option-hover); color: var(--blue); transform: translateY(-1px); box-shadow: 0 3px 10px rgba(26,111,175,0.12); }
+  .option-btn:disabled { cursor: not-allowed; }
+
+  .option-key { width: 28px; height: 28px; border-radius: 50%; background: var(--navy); color: #fff; font-family: 'Rajdhani', sans-serif; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.18s; }
+  .option-btn:hover:not(:disabled) .option-key { background: var(--blue); }
+
+  .option-btn.correct-opt { border-color: var(--green); background: var(--green-light); color: var(--green); animation: popIn 0.3s ease; }
+  .option-btn.correct-opt .option-key { background: var(--green); }
+  .option-btn.incorrect-opt { border-color: var(--red); background: var(--red-light); color: var(--red); animation: shake 0.35s ease; }
+  .option-btn.incorrect-opt .option-key { background: var(--red); }
+  .result-icon { margin-left: auto; font-size: 1.1rem; font-weight: 700; flex-shrink: 0; }
+
+  .explanation-box { margin-top: 20px; background: var(--exp-bg); border: 1px solid var(--blue); border-radius: 10px; padding: 14px 18px; font-size: 0.83rem; color: var(--text); line-height: 1.6; display: none; animation: fadeIn 0.3s ease; }
+  .explanation-box.show { display: block; }
+  .explanation-box strong { font-weight: 700; color: var(--accent); }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes popIn { 0% { transform: scale(0.96); } 60% { transform: scale(1.02); } 100% { transform: scale(1); } }
+  @keyframes shake { 0%,100% { transform: translateX(0); } 20%,60% { transform: translateX(-5px); } 40%,80% { transform: translateX(5px); } }
+
+  /* ── NAVIGATION ── */
+  .nav-bar { background: var(--card); border-radius: 12px; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .nav-btn { display: flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 8px; border: 2px solid var(--navy); background: var(--navy); color: #fff; font-family: 'Nunito', sans-serif; font-size: 0.88rem; font-weight: 700; cursor: pointer; transition: all 0.18s; letter-spacing: 0.3px; }
+  .nav-btn:hover:not(:disabled) { background: var(--blue2); border-color: var(--blue2); transform: translateY(-1px); }
+  .nav-btn:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
+  .nav-btn.primary { background: var(--accent); border-color: var(--accent); color: #1a1a1a; }
+  .nav-btn.primary:hover:not(:disabled) { background: var(--accent2); border-color: var(--accent2); }
+  .q-counter-pill { background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: 6px 16px; font-size: 0.8rem; font-weight: 700; color: var(--muted); font-family: 'Rajdhani', sans-serif; letter-spacing: 0.5px; }
+
+  /* ── RESULTS SCREEN ── */
+  .results-screen { display: none; background: var(--card); border-radius: 16px; padding: 40px; border: 1px solid var(--border); box-shadow: 0 4px 24px rgba(0,0,0,0.09); flex: 1; animation: fadeIn 0.5s ease; }
+  .results-screen.show { display: block; }
+  
+  .results-top { display: flex; flex-direction: column; align-items: center; gap: 24px; text-align: center; }
+  .result-score-circle { width: 140px; height: 140px; border-radius: 50%; background: conic-gradient(var(--green) calc(var(--pct) * 3.6deg), var(--border) 0deg); display: flex; align-items: center; justify-content: center; position: relative; transition: background 0.1s linear; }
+  .result-score-inner { width: 110px; height: 110px; border-radius: 50%; background: var(--card); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .result-pct { font-family: 'Rajdhani', sans-serif; font-size: 2rem; font-weight: 700; color: var(--green); line-height: 1; }
+  .result-pct-label { font-size: 0.7rem; color: var(--muted); font-weight: 600; }
+  .result-title { font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; font-weight: 700; color: var(--text); }
+  
+  .result-stats { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+  .result-stat { background: var(--bg); border-radius: 10px; padding: 14px 22px; text-align: center; border: 1px solid var(--border); min-width: 100px; }
+  .result-stat-num { font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; font-weight: 700; }
+  .result-stat-label { font-size: 0.72rem; color: var(--muted); font-weight: 600; }
+  
+  .results-actions { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
+  .btn-outline { background: transparent; color: var(--red); border: 2px solid var(--red); font-family: 'Rajdhani', sans-serif; font-size: 1.05rem; font-weight: 700; padding: 10px 24px; border-radius: 9px; cursor: pointer; transition: all 0.2s; letter-spacing: 0.5px; }
+  .btn-outline:hover { background: var(--red-light); transform: translateY(-2px); }
+  .restart-btn { padding: 10px 32px; border-radius: 9px; border: none; background: var(--navy); color: var(--accent); font-family: 'Rajdhani', sans-serif; font-size: 1.05rem; font-weight: 700; letter-spacing: 1px; cursor: pointer; transition: all 0.2s; }
+  .restart-btn:hover { background: var(--blue2); color: #fff; transform: translateY(-2px); }
+
+  /* Detailed Table */
+  .section-title { font-family: 'Rajdhani', sans-serif; font-size: 1.4rem; font-weight: 700; margin: 40px 0 15px; color: var(--text); text-align: left; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--card); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left; }
+  thead { background: var(--bg); }
+  th { padding: 14px 16px; font-weight: 700; color: var(--muted); border-bottom: 1px solid var(--border); text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.75rem; }
+  td { padding: 14px 16px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; color: var(--text); }
+  tr:last-child td { border-bottom: none; }
+  
+  .status-badge { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 20px; font-size: 0.72rem; font-weight: 700; white-space: nowrap; }
+  .badge-correct { background: var(--green-light); color: var(--green); }
+  .badge-wrong   { background: var(--red-light); color: var(--red); }
+  .badge-skipped { background: var(--border); color: var(--text); }
+
+
+  /* ── 📱 MOBILE RESPONSIVE QUERIES ── */
+  @media (max-width: 950px) {
+    .main-layout { 
+      flex-direction: column; 
+      padding: 16px 12px 80px; 
+      gap: 24px; 
+    }
+    .question-area { 
+      order: -1; /* Keeps the question at the top on mobile */
+      width: 100%; 
+    }
+    .scoreboard { 
+      width: 100%; 
+      position: static; /* Removes sticky behavior */
+      order: 2; /* Moves scoreboard below the question */
+      display: flex; 
+      flex-direction: row; 
+      flex-wrap: wrap; 
+      gap: 16px;
+    }
+    .score-card, .qnav-card {
+      flex: 1;
+      min-width: 280px;
+    }
+    .qnav-grid {
+      max-height: 200px; /* Scrollable grid on mobile */
+    }
+    .header-logo { font-size: 1.15rem; }
+    .header-timer { font-size: 0.95rem; }
+  }
+
+  @media (max-width: 680px) { 
+    .options-grid { grid-template-columns: 1fr; } 
+  }
+
+  @media (max-width: 600px) {
+    .scoreboard { flex-direction: column; }
+    .question-card { padding: 20px 16px; }
+    .q-text { font-size: 0.95rem; }
+    .option-btn { font-size: 0.85rem; padding: 12px 14px; }
+    
+    .results-actions { flex-direction: column; width: 100%; }
+    .results-actions button { width: 100%; }
+    
+    .table-wrap { font-size: 0.75rem; }
+    th, td { padding: 10px 8px; }
+    
+    .exam-bar-meta { display: none; } /* Hide extra text to save space */
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-logo">CH-7 GEOGRAPHICAL<span> FEATURES OF ODISHA</span></div>
+  <div class="header-controls">
+    <div class="header-timer" id="timerDisplay">⏱ 00:00</div>
+    <button id="themeToggle" class="theme-toggle-btn" onclick="toggleTheme()">🌙 Dark</button>
+  </div>
+</header>
+
+<div class="main-layout">
+
+  <!-- SCOREBOARD PANEL -->
+  <aside class="scoreboard">
+    <div class="score-card">
+      <div class="score-card-header">📊 Live Score</div>
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span>Progress</span>
+          <span id="progressPct">0%</span>
+        </div>
+        <div class="progress-bar-bg"><div class="progress-bar-fill" id="progressFill" style="width:0%"></div></div>
+      </div>
+      <table class="score-table">
+        <tr><td>Total Questions</td><td><span class="badge badge-total" id="sTotal">0</span></td></tr>
+        <tr><td>Attempted</td><td><span class="badge badge-attempted" id="sAttempted">0</span></td></tr>
+        <tr><td>✔ Correct</td><td><span class="badge badge-correct" id="sCorrect">0</span></td></tr>
+        <tr><td>✘ Incorrect</td><td><span class="badge badge-incorrect" id="sIncorrect">0</span></td></tr>
+        <tr><td>Remaining</td><td><span class="badge badge-remaining" id="sRemaining">0</span></td></tr>
+      </table>
+    </div>
+
+    <div class="qnav-card">
+      <div class="qnav-header">📋 Question Panel</div>
+      <div class="qnav-grid" id="qnavGrid"></div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div> Current</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--green-light);border:1px solid var(--green)"></div> Correct</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--red-light);border:1px solid var(--red)"></div> Incorrect</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--border)"></div> Not Visited</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- QUESTION AREA -->
+  <main class="question-area">
+    <div class="exam-bar">
+      <div class="exam-bar-title">CH-7 GEOGRAPHICAL FEATURES OF ODISHA</div>
+      <div class="exam-bar-meta">OSSC | OSSSC | OPSC | ODISHA POLICE </div>
+    </div>
+
+    <div id="questionWrapper"></div>
+
+    <div class="nav-bar" id="navBar">
+      <button class="nav-btn" id="prevBtn" onclick="navigate(-1)" disabled>◀ Previous</button>
+      <div class="q-counter-pill" id="qCounterPill">Q 1 / 60</div>
+      <button class="nav-btn primary" id="nextBtn" onclick="navigate(1)">Next ▶</button>
+    </div>
+
+    <!-- NEW RESULTS SCREEN WITH TABLE & EXPORT -->
+    <div class="results-screen" id="resultsScreen">
+      <div class="results-top">
+        <div class="result-title">🎉 Test Completed!</div>
+        <div class="result-score-circle" id="scoreCircle">
+          <div class="result-score-inner">
+            <div class="result-pct" id="resultPct">0%</div>
+            <div class="result-pct-label">Score</div>
+          </div>
+        </div>
+        <div class="result-stats">
+          <div class="result-stat"><div class="result-stat-num" id="rTotal" style="color:var(--text)">0</div><div class="result-stat-label">Total</div></div>
+          <div class="result-stat"><div class="result-stat-num" id="rCorrect" style="color:var(--green)">0</div><div class="result-stat-label">Correct</div></div>
+          <div class="result-stat"><div class="result-stat-num" id="rIncorrect" style="color:var(--red)">0</div><div class="result-stat-label">Incorrect</div></div>
+          <div class="result-stat"><div class="result-stat-num" id="rSkipped" style="color:var(--accent)">0</div><div class="result-stat-label">Skipped</div></div>
+        </div>
+      </div>
+
+      <div class="results-actions">
+        <button class="btn-outline" onclick="exportWrongToExcel()">⬇ Download Incorrect Questions</button>
+        <button class="restart-btn" onclick="restartTest()">↺ RESTART TEST</button>
+      </div>
+
+      <div class="section-title">Detailed Answer Review</div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Category</th><th>Question</th><th>Your Answer</th><th>Correct Answer</th><th>Status</th></tr>
+          </thead>
+          <tbody id="results-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+/* ══════════════════════════════════════════
+   THEME TOGGLE
+══════════════════════════════════════════ */
+function toggleTheme() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  document.getElementById('themeToggle').innerHTML = isDark ? '🌙 Dark' : '☀️ Light';
+}
+
+/* ══════════════════════════════════════════
+   QUESTION BANK 
+══════════════════════════════════════════ */
+const questions = [
+  {
+    "q": "Odisha is located in which part of India?",
+    "h": "",
+    "opts": [
+      "Northern Plain",
+      "Southern Peninsula",
+      "Eastern Coast",
+      "Western Coast"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "The state of Odisha lies on the Eastern coast of India, known for its diverse geographical features."
+  },
+  {
+    "q": "Which is the largest district of Odisha by area?",
+    "h": "",
+    "opts": [
+      "Kendujhar",
+      "Koraput",
+      "Ganjam",
+      "Mayurbhanj"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "Mayurbhanj is not only the northernmost district but also the largest district by area in Odisha."
+  },
+  {
+    "q": "Which is the smallest district in Odisha in terms of area?",
+    "h": "",
+    "opts": [
+      "Nayagarh",
+      "Dhenkanal",
+      "Jagatsinghpur",
+      "Boudh"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "Jagatsinghpur is the smallest district by area out of the 30 administrative districts in the state."
+  },
+  {
+    "q": "The latitudinal extension of Odisha is from",
+    "h": "",
+    "opts": [
+      "17°49'E to 22°34'E",
+      "81°27'E to 87°29'E",
+      "91°27'E to 77°29'E",
+      "82°27'E to 97°29'E"
+    ],
+    "ans": 0,
+    "cat": "Geography of Odisha",
+    "exp": "Odisha's geographical overview shows its latitude stretches from 17°49'E to 22°34'E"
+  },
+  {
+    "q": "The longitudinal extension of Odisha is from",
+    "h": "",
+    "opts": [
+      "17°49'E to 22°34'E",
+      "81°27'E to 87°29'E",
+      "91°27'E to 77°29'E",
+      "82°27'E to 97°29'E"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "The state's longitude extends from 81°27'E to 87°29'E."
+  },
+  {
+    "q": "The total geographical area of Odisha extends over",
+    "h": "",
+    "opts": [
+      "1,55,707 sq km",
+      "1,65,700 sq km",
+      "1,45,707 sq km",
+      "None of these"
+    ],
+    "ans": 0,
+    "cat": "Geography of Odisha",
+    "exp": "The area is 1,55,707 sq. km, which accounts for 4.87% of India's total land area."
+  },
+  {
+    "q": "Which state bounds on the South of Odisha?",
+    "h": "",
+    "opts": [
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Andhra Pradesh",
+      "Karnataka"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "Andhra Pradesh bounds Odisha on the South, sharing borders with districts like Malkangiri, Gajapati, Ganjam, Rayagada, and Koraput."
+  },
+  {
+    "q": "Which state bounds Odisha on the West?",
+    "h": "",
+    "opts": [
+      "Maharashtra",
+      "Chhattisgarh",
+      "Andhra Pradesh",
+      "Karnataka"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "Chhattisgarh is located to the West of Odisha, sharing borders with multiple districts including Malkangiri, Naupada, and Kalahandi."
+  },
+  {
+    "q": "The coastal plains of Odisha stretch on the Eastern Coast of India from which river in the North-East?",
+    "h": "",
+    "opts": [
+      "Brahmani",
+      "Budhabalanga",
+      "Subarnarekha",
+      "Vamsadhara"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "The coastal plains stretch from the Subarnarekha River in the North-East to the Rushikulya river in the South-West."
+  },
+  {
+    "q": "Which of the following is an Odisha's neighbouring state?",
+    "h": "",
+    "opts": [
+      "Bihar",
+      "Jharkhand",
+      "Uttar Pradesh",
+      "Madhya Pradesh"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "Jharkhand is a neighbouring state situated to the North of Odisha."
+  },
+  {
+    "q": "The revised coastline length of Odisha is",
+    "h": "",
+    "opts": [
+      "476.4 km",
+      "574.7 km",
+      "600.2 km",
+      "512.5 km"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "As per the January 2025 NHO report, Odisha's coastline length was updated from 476.4 km to 574.7 km."
+  },
+  {
+    "q": "Which area of Odisha is called the 'Hexadeltaic region' or the 'Gift of Six Rivers'?",
+    "h": "",
+    "opts": [
+      "Coastal Plains",
+      "Middle Mountainous and Highlands Region",
+      "Central Plateaus",
+      "Western Rolling Uplands"
+    ],
+    "ans": 0,
+    "cat": "Geography of Odisha",
+    "exp": "The coastal plains of Odisha are known as the Hexadeltaic region or the Gift of Six Rivers."
+  },
+  {
+    "q": "The rivers which form the Hexadeltaic region of the coastal plains of Odisha are Subarnarekha, Budhabalanga, Baitarani, Brahmani, Rushikulya and",
+    "h": "",
+    "opts": [
+      "Chilika",
+      "Khurda",
+      "Phulbani",
+      "Mahanadi"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "The six rivers forming this region are Subarnarekha, Budhabalanga, Baitarani, Brahmani, Mahanadi, and Rushikulya."
+  },
+  {
+    "q": "The Middle Coastal Plains comprise the compound deltas of the",
+    "h": "",
+    "opts": [
+      "Baitarani, Brahmani and Mahanadi rivers",
+      "Subarnarekha and the Budhabalanga rivers",
+      "Rushikulya and Mahanadi rivers",
+      "None of the above"
+    ],
+    "ans": 0,
+    "cat": "Geography of Odisha",
+    "exp": "It includes the combined deltas of the Salandi, Baitarani, and Brahmani Rivers in the North, and the Mahanadi River delta in the South."
+  },
+  {
+    "q": "The Mahanadi delta is in which of the following plains?",
+    "h": "",
+    "opts": [
+      "Middle",
+      "Northern",
+      "Southern",
+      "Eastern"
+    ],
+    "ans": 0,
+    "cat": "Geography of Odisha",
+    "exp": "The Mahanadi River delta is located in the South of the Middle Coastal (Cuttack-Puri) Plain."
+  },
+  {
+    "q": "The South Coastal Plains comprises which of the following plains?",
+    "h": "",
+    "opts": [
+      "Baitarani Plain",
+      "Laccustrine Plain",
+      "Pan Plain",
+      "None of these"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "The Southern Coastal Plains include the Lacustrine plain of the Chilika lake."
+  },
+  {
+    "q": "Which zone of the Rushikulya Plains is known as the Little Sunderbans?",
+    "h": "",
+    "opts": [
+      "Arable tract",
+      "Sub-montane tract",
+      "Salt tract",
+      "None of these"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "The Salt Tract is covered with tidal forests, which are referred to as the Little Sunderbans in the Mahanadi delta."
+  },
+  {
+    "q": "The sub-montane tract to the West is termed as the zone of",
+    "h": "",
+    "opts": [
+      "vegetation",
+      "revelation",
+      "transition",
+      "illusion"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "The Sub-Montane Tract is a zone of transition that lies West of the plains, where it meets the Eastern Ghats."
+  },
+  {
+    "q": "Which region among the physiographic regions of Odisha is marked by a number of water sheds?",
+    "h": "",
+    "opts": [
+      "Coastal Plains",
+      "Rolling Uplands",
+      "Middle Mountainous and the Highlands Region",
+      "Major Flood Plains"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "The Middle Mountainous and Highlands region extends from North-East to North-West and is marked by a number of watersheds."
+  },
+  {
+    "q": "Odisha highlands are also known as the",
+    "h": "",
+    "opts": [
+      "Gali Konda",
+      "Garhjat Hills",
+      "Nilgiri Hills",
+      "Taria Konda"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "While Garhjat Hills is the correct historical term tested in OSSC CGL 2022, the text generally describes this highland area as being dominated by the Eastern Ghat's hills and mountains."
+  },
+  {
+    "q": "Which of the following rivers has cut deep and narrow valleys in the middle mountainous and highlands region of Odisha?",
+    "h": "",
+    "opts": [
+      "Baitarani",
+      "Brahmani",
+      "Mahanadi",
+      "All of these"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "Major rivers like Baitarani, Brahmani, Mahanadi, Rushikulya, Vamsadhara, and Nagavali have all carved deep and narrow valleys in this region."
+  },
+  {
+    "q": "Which mountains are of volcanic origin in Odisha?",
+    "h": "",
+    "opts": [
+      "Simlipal mountain",
+      "Meghasani mountain",
+      "Gandhamardhan",
+      "Both (a) and (b)"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "The Simlipal and Meghasani Mountains are of volcanic origin and feature dome-shaped structures."
+  },
+  {
+    "q": "Which part of the Middle Mountainous region of Odisha is a poly-cyclic region?",
+    "h": "",
+    "opts": [
+      "Simplipal and Meghasani Mountains",
+      "Mankarnacha-Malayagiri and Gandhamardhan Mountains",
+      "Watershed between the Brahmani and the Mahanadi",
+      "Potangi and Chandragiri Mountain Ranges"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "The Mankadnacha, Malayagiri, and Gandhamardan Mountains are poly-cyclic in nature."
+  },
+  {
+    "q": "Which ranges are highest in Odisha?",
+    "h": "",
+    "opts": [
+      "Common Interfluves of the Mahanadi, the Rushikulya and Vamsadhara",
+      "Simlipal and Meghasani Mountains",
+      "Mankarnacha-Malayagiri and Gandhamardan Mountains",
+      "Potangi and Chandragiri Mountain Ranges"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "The Potangi and Chandragiri Mountain Ranges contain the highest peak of Odisha, the Deomali peak (1672 m)."
+  },
+  {
+    "q": "The highest peak of Odisha is",
+    "h": "",
+    "opts": [
+      "Deomali peak",
+      "Balia Pahar",
+      "Badam Pahar",
+      "Golikonda"
+    ],
+    "ans": 0,
+    "cat": "Geography of Odisha",
+    "exp": "Deomali peak is the highest in Odisha, standing at 1672 metres."
+  },
+  {
+    "q": "Deomali peak lies in which district of Odisha?",
+    "h": "",
+    "opts": [
+      "Gajapati",
+      "Rayagada",
+      "Koraput",
+      "Phulbani"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "Deomali is located in the Koraput district."
+  },
+  {
+    "q": "How many central plateaus are there in Odisha?",
+    "h": "",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "ans": 0,
+    "cat": "Geography of Odisha",
+    "exp": "The state has two broad plateaus: the Panposh-Keonjhar-Pallahara Plateau and the Nabarangpur-Jayapur Region."
+  },
+  {
+    "q": "Which among the following landforms has the least elevation?",
+    "h": "",
+    "opts": [
+      "Simlipal mountains",
+      "Panposh-Keonjhar-Pallahara Plateau",
+      "Western rolling uplands",
+      "Baitarani and Brahmani interfluves"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "The Western Rolling Uplands have the least elevation, ranging from just 153 to 305 m."
+  },
+  {
+    "q": "Which physiographic part of Odisha is the most suited for agricultural activities?",
+    "h": "",
+    "opts": [
+      "Coastal plains in South",
+      "Sub montane tract of Rushikulyaplains",
+      "Malkangiri uplands of Sabari basin",
+      "Flood plains of Mahanadi"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "Most agricultural activities take place in the highly fertile flood plains made by rivers. (Note: The Arable tract is also considered the most fertile and agriculturally rich region)."
+  },
+  {
+    "q": "Which of the following lakes is not located in Odisha?",
+    "h": "",
+    "opts": [
+      "Anupam lake",
+      "Ansupa lake",
+      "Tampara lake",
+      "Kanjia lake"
+    ],
+    "ans": 0,
+    "cat": "Geography of Odisha",
+    "exp": "Ansupa, Tampara, and Kanjia are freshwater and man-made lakes located within Odisha."
+  },
+  {
+    "q": "Which one of the following Ramsar site is not located in Odisha?",
+    "h": "",
+    "opts": [
+      "Chilika Lake",
+      "Ansupa Lake",
+      "Tampara Lake",
+      "Samaspur Bird Sanctuary"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "Chilika, Ansupa, and Tampara are officially listed Ramsar sites in Odisha."
+  },
+  {
+    "q": "Which of the following is the largest freshwater lake in Odisha?",
+    "h": "",
+    "opts": [
+      "Pata lake",
+      "Chilika",
+      "Sara",
+      "Ansupa lake"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "Ansupa is the prominent freshwater Ramsar site lake in Odisha, located in Cuttack. (Chilika is a brackish water lagoon)."
+  },
+  {
+    "q": "The Chilika lake spreads across which of the following distrcts?",
+    "h": "",
+    "opts": [
+      "Cuttack, Balasore, Ganjam",
+      "Sundergarh, Koraput, Khordha",
+      "Puri, Khordha and Ganjam",
+      "Kalahandi, Jajpur, Deogarh"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "The Chilika Lake spans across the Puri, Khordha, and Ganjam districts."
+  },
+  {
+    "q": "Which is the largest lake of Odisha?",
+    "h": "",
+    "opts": [
+      "Kanjia lake",
+      "Chilika lake",
+      "Ansupa lake",
+      "Sara lake"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "Chilika Lake is the largest lake in Odisha, covering an area of 515 sq km, and is the largest brackish water lagoon in Asia."
+  },
+  {
+    "q": "Consider the following statements about Odisha\n(i) It is the ninth largest state by area.\n(ii) It is the eleventh largest state by population.\nWhich of the statements given above is/are correct?",
+    "h": "",
+    "opts": [
+      "Only (i)",
+      "Only (ii)",
+      "Both (i) and (ii)",
+      "Neither (i) nor (ii)"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "Odisha is the 8th largest state by area (not 9th), but it is correctly the 11th largest state by population."
+  },
+  {
+    "q": "Which of the following lakes is located in Cuttack district?\n1. Ansupa\n2. Sara",
+    "h": "",
+    "opts": [
+      "Both 1 and 2",
+      "Only 2",
+      "Neither 1 nor 2",
+      "Only 1"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "Ansupa Lake is located in Cuttack, whereas Sara Lake is located in Puri."
+  },
+  {
+    "q": "Consider the following statements about the plateaus in Odisha.\n(i) The Panposh Keonjhar - Pallahara plateau comprises the Upper Baitarani catchment basin.\n(ii) The Nabarangpur - Jayapore plateau comprises the Sabari basin.\nWhich of the statements given above is/are correct?",
+    "h": "",
+    "opts": [
+      "Only 1",
+      "Only 2",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "Both statements are correct geographically. The Panposh-Keonjhar-Pallahara Plateau involves the Upper Baitarani Catchment Basin, and the Nabarangpur-Jayapur Region involves the Upper Sabari Basin."
+  },
+  {
+    "q": "Which of the following statements is/are true?\n(i) The Middle Mountainous region covers about three-fourth of the entire state of Odisha.\n(ii) The coastline of Odisha is about 230 km.\nWhich of the statements given above is/are correct?",
+    "h": "",
+    "opts": [
+      "Only (i)",
+      "Only (ii)",
+      "Both (i) and (ii)",
+      "None of the above"
+    ],
+    "ans": 0,
+    "cat": "Geography of Odisha",
+    "exp": "Statement (i) is true as this region occupies about three-fourths of Odisha's total area. Statement (ii) is false because the revised coastline length is 574.7 km."
+  },
+  {
+    "q": "Consider the following statements\n(i) The rivers of Odisha have deep valleys.\n(ii) The state of Odisha is bound by Bay of Bengal on the South-East.\nWhich of the statements given above is/are correct?",
+    "h": "",
+    "opts": [
+      "Only 1",
+      "Only 2",
+      "Both 1 and 2",
+      "All of the above"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "While rivers have carved deep valleys in the middle mountainous regions, the state itself is widely recognized as bounded by the Bay of Bengal on its East/South-East boundary. As per the official answer key, option (b) is marked correct."
+  },
+  {
+    "q": "Match the following lists.\nList I\nA. Zone of Transition\nB. Little Sunderbans\nC. Rice Bowl\nD. Flood Plains\nList II\n1. Source of Hydro Electrical Projects\n2. Coastal Plains\n3. Sub-montane tract of the Rushikulya Plains\n4. Salt tract along the coast\nCodes ABCD",
+    "h": "",
+    "opts": [
+      "3 1 2 4",
+      "2 3 4 1",
+      "3 4 2 1",
+      "1 2 3 4"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "A-3: The Sub-Montane tract is the Zone of transition. B-4: Little Sunderbans are tidal forests found in the Salt tract along the coast. C-2: The Coastal Plains are a highly fertile region known as the Rice Bowl of Odisha. D-1: Flood Plains in river valleys are often linked to hydro projects and intense agriculture."
+  },
+  {
+    "q": "According to the latest coastline survey report released by the National Hydrographic Organisation (NHO), what is the revised coastline length of Odisha?",
+    "h": "",
+    "opts": [
+      "476.4 km",
+      "7516.60 km",
+      "574.7 km",
+      "11098.81 km"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "Odisha's coastline length has been revised from the existing 476.4 km to 574.7 km. This update added 98.3 km to the previously recorded length."
+  },
+  {
+    "q": "The coastal plains of Odisha are often referred to as the 'Gift of Six Rivers'. Which of the following rivers is NOT a part of this Hexadeltaic region?",
+    "h": "",
+    "opts": [
+      "Subarnarekha",
+      "Vamsadhara",
+      "Baitarani",
+      "Rushikulya"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "The coastal plains of Odisha are called the Hexadeltaic region or the Gift of Six Rivers. These six rivers are Subarnarekha, Budhabalanga, Baitarani, Brahmani, Mahanadi, and Rushikulya. Vamsadhara is not included in this specific region."
+  },
+  {
+    "q": "Which mountain range in Odisha is known to be of volcanic origin and features dome-shaped and circular structures?",
+    "h": "",
+    "opts": [
+      "Mankadnacha and Malayagiri Mountains",
+      "Potangi and Chandragiri Mountain Ranges",
+      "Gandhamardan Mountains",
+      "Simlipal and Meghasani Mountains"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "Simlipal and Meghasani mountains are of volcanic origin. These mountains have dome-shaped and circular structures, and their elevation ranges from 600 to 1050 m."
+  },
+  {
+    "q": "The highest peak of Odisha, Deomali (1672 m), is located in which of the following mountain ranges?",
+    "h": "",
+    "opts": [
+      "Common River Basins of Mahanadi, Rushikulya and Vamsadhara",
+      "Potangi and Chandragiri Mountain Ranges",
+      "Simlipal and Meghasani Mountains",
+      "Mankadnacha, Malayagiri and Gandhamardan Mountains"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "The highest peak of Odisha is Deomali peak, which has a height of 1672 m. This peak lies in the Potangi and Chandragiri Mountain Ranges."
+  },
+  {
+    "q": "Which plateau region in Odisha is known for receiving the highest annual rainfall, making it suitable for cultivating a fine variety of rice?",
+    "h": "",
+    "opts": [
+      "Nabarangpur-Jayapur Region",
+      "Panposh-Keonjhar-Pallahara Plateau",
+      "Rajgangpur-Panposh uplands",
+      "Malkangiri uplands"
+    ],
+    "ans": 0,
+    "cat": "Geography of Odisha",
+    "exp": "The Nabarangpur-Jayapur Region, also known as the Upper Sabari Basin, is the highest rainfall region of Odisha. It receives more than 178 cm of rainfall annually, which is why a fine variety of rice is cultivated here."
+  },
+  {
+    "q": "Which zone of the Southern Coastal Plains (Rushikulya Plains) is covered with tidal forests and is referred to as the 'Little Sunderbans'?",
+    "h": "",
+    "opts": [
+      "Arable Track",
+      "Sub-Montane Tract",
+      "Salt Tract",
+      "Delta Region"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "The Salt Tract is a narrow coastal belt filled with salt, making it unsuitable for agriculture. It is covered with tidal forests, which are known as the Little Sunderbans in the Mahanadi delta."
+  },
+  {
+    "q": "Which port in Odisha is recognized as India's deepest natural port?",
+    "h": "",
+    "opts": [
+      "Dhamra Port",
+      "Gopalpur Port",
+      "Chandbali Port",
+      "Paradeep Port"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "Paradeep Port, located in the Jagatsinghpur district, is India's deepest natural port. It is a major port that handles cargo like iron ore, coal, fertilisers, and petroleum products."
+  },
+  {
+    "q": "The Rengali artificial lake is built on the source of which river?",
+    "h": "",
+    "opts": [
+      "Mahanadi river",
+      "Ramial river",
+      "Brahmani river",
+      "Indravati river"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "The Rengali artificial lake is located in the Dhenkanal district. Its primary source is the Ramial river."
+  },
+  {
+    "q": "Which district of Odisha shares its border with both the states of West Bengal and Jharkhand?",
+    "h": "",
+    "opts": [
+      "Balasore",
+      "Sundergarh",
+      "Mayurbhanj",
+      "Keonjhar"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "The Mayurbhanj district borders both West Bengal and Jharkhand to the North. It also holds the distinction of being both the northernmost district and the largest district by area in Odisha."
+  },
+  {
+    "q": "The northern part of the Middle Coastal Plain (Cuttack-Puri Coastal Plain) includes the combined deltas of which rivers?",
+    "h": "",
+    "opts": [
+      "Subarnarekha and Budhabalanga",
+      "Mahanadi and Rushikulya",
+      "Salandi, Baitarani and Brahmani",
+      "Sabari and Sileru"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "The Middle Coastal Plain is located between the Northern and Southern Coastal Plains. Its northern section includes the combined deltas of the Salandi, Baitarani, and Brahmani rivers, while the southern section includes the Mahanadi River delta."
+  },
+  {
+    "q": "The Malayagiri, Mankadnacha, and Gandhamardan mountains are part of which physiographic division of Odisha?",
+    "h": "",
+    "opts": [
+      "Coastal Plains",
+      "Central Plateaus",
+      "Middle Mountainous and Highlands Region",
+      "Western Rolling Uplands"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "These mountains belong to the Middle Mountainous and Highlands Region, which is poly-cyclic in nature. They are oriented in a North-South direction and form part of the Eastern Ghats."
+  },
+  {
+    "q": "Under the Western Rolling Uplands division, the Malkangiri uplands are part of which specific river basin?",
+    "h": "",
+    "opts": [
+      "Ib basin",
+      "Tel basin",
+      "Jira and Jhaun basins",
+      "Sabari basin"
+    ],
+    "ans": 3,
+    "cat": "Geography of Odisha",
+    "exp": "The Western Rolling Uplands consist of several distinct morphological units. The Malkangiri uplands specifically belong to the Sabari basin."
+  },
+  {
+    "q": "What type of soil is predominantly found in the 'Sub-Montane Tract' of the Southern Plains?",
+    "h": "",
+    "opts": [
+      "Alluvial soil",
+      "Black soil",
+      "Predominantly red soil and some laterite",
+      "Peaty soil"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "The Sub-Montane Tract is a zone of transition lying West of the plains. It features predominantly red soil with some laterite and is highly prone to erosion."
+  },
+  {
+    "q": "Which of the following is the southernmost district of Odisha?",
+    "h": "",
+    "opts": [
+      "Ganjam",
+      "Gajapati",
+      "Malkangiri",
+      "Koraput"
+    ],
+    "ans": 2,
+    "cat": "Geography of Odisha",
+    "exp": "Malkangiri holds a unique geographical position as it is both the southernmost and the westernmost district of Odisha."
+  },
+  {
+    "q": "What is the height of the prominent peak 'Mahendragiri' located in Odisha?",
+    "h": "",
+    "opts": [
+      "1672 m",
+      "1501 m",
+      "1147 m",
+      "1060 m"
+    ],
+    "ans": 1,
+    "cat": "Geography of Odisha",
+    "exp": "Mahendragiri peak has an elevation of 1501 m. It is located in the deeply eroded watershed of the Common River Basins of the Mahanadi, Rushikulya, and Vamsadhara."
+  }
+];
+
+/* ══════════════════════════════════════════
+   STATE LOGIC
+══════════════════════════════════════════ */
+let currentQ = 0;
+let answers = [];
+let userChoices = [];
+let timerSec = 0;
+let timerInterval;
+let TOTAL = 0;
+
+/* ══════════════════════════════════════════
+   INIT
+══════════════════════════════════════════ */
+function init() {
+  TOTAL = questions.length;
+  answers = new Array(TOTAL).fill(null);
+  userChoices = new Array(TOTAL).fill(null);
+  currentQ = 0;
+  timerSec = 0;
+  clearInterval(timerInterval);
+  timerInterval = setInterval(() => {
+    timerSec++;
+    const m = String(Math.floor(timerSec/60)).padStart(2,'0');
+    const s = String(timerSec%60).padStart(2,'0');
+    document.getElementById('timerDisplay').textContent = `⏱ ${m}:${s}`;
+  }, 1000);
+
+  buildQNav();
+  renderQuestion();
+  updateScoreboard();
+  
+  // Reset score circle visually
+  document.getElementById('scoreCircle').style.setProperty('--pct', 0);
+  document.getElementById('resultPct').textContent = '0%';
+  
+  document.getElementById('resultsScreen').classList.remove('show');
+  document.getElementById('questionWrapper').style.display = '';
+  document.getElementById('navBar').style.display = '';
+}
+
+/* ══════════════════════════════════════════
+   RENDER QUESTION
+══════════════════════════════════════════ */
+function renderQuestion() {
+  const q = questions[currentQ];
+  const attempted = answers[currentQ] !== null;
+  const userChoice = userChoices[currentQ];
+  const optLetters = ['A','B','C','D'];
+  
+  let optsHTML = '';
+  q.opts.forEach((opt, i) => {
+    let cls = 'option-btn';
+    let icon = '';
+    if (attempted) {
+      if (i === q.ans) { cls += ' correct-opt'; icon = '<span class="result-icon">✔</span>'; }
+      else if (i === userChoice && userChoice !== q.ans) { cls += ' incorrect-opt'; icon = '<span class="result-icon">✘</span>'; }
+    }
+    optsHTML += `
+      <button class="${cls}" onclick="selectAnswer(${i})" ${attempted ? 'disabled' : ''}>
+        <span class="option-key">${optLetters[i]}</span>
+        <span>${opt}</span>
+        ${icon}
+      </button>`;
+  });
+
+  const expDisplay = attempted ? 'show' : '';
+  const html = `
+    <div class="question-card">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px;">
+        <span class="q-category">${q.cat}</span>
+      </div>
+      <div class="q-top">
+        <div class="q-number">Q ${currentQ+1}</div>
+        <div>
+          <div class="q-text">${q.q}</div>
+          ${q.h ? `<div class="q-hindi">${q.h}</div>` : ''}
+        </div>
+      </div>
+      <div class="options-grid">${optsHTML}</div>
+      <div class="explanation-box ${expDisplay}">
+        💡 <strong>Explanation:</strong> ${q.exp}
+      </div>
+    </div>`;
+
+  document.getElementById('questionWrapper').innerHTML = html;
+  document.getElementById('prevBtn').disabled = currentQ === 0;
+  document.getElementById('nextBtn').disabled = false;
+  document.getElementById('qCounterPill').textContent = `Q ${currentQ+1} / ${TOTAL}`;
+  
+  if (currentQ === TOTAL - 1) {
+    document.getElementById('nextBtn').textContent = 'Submit Test ✓';
+    document.getElementById('nextBtn').classList.add('primary');
+  } else {
+    document.getElementById('nextBtn').textContent = 'Next ▶';
+    document.getElementById('nextBtn').classList.remove('primary');
+  }
+  updateQNav();
+}
+
+function selectAnswer(i) {
+  if (answers[currentQ] !== null) return;
+  userChoices[currentQ] = i;
+  answers[currentQ] = (i === questions[currentQ].ans) ? 'correct' : 'incorrect';
+  updateScoreboard();
+  renderQuestion();
+}
+
+function navigate(dir) {
+  if (dir === 1 && currentQ === TOTAL - 1) { showResults(); return; }
+  currentQ = Math.max(0, Math.min(TOTAL - 1, currentQ + dir));
+  renderQuestion();
+}
+function goToQuestion(idx) { currentQ = idx; renderQuestion(); }
+
+function updateScoreboard() {
+  const attempted = answers.filter(a => a !== null).length;
+  const correct = answers.filter(a => a === 'correct').length;
+  const incorrect = answers.filter(a => a === 'incorrect').length;
+  const remaining = TOTAL - attempted;
+  const pct = Math.round((attempted / TOTAL) * 100) || 0;
+
+  document.getElementById('sTotal').textContent = TOTAL;
+  document.getElementById('sAttempted').textContent = attempted;
+  document.getElementById('sCorrect').textContent = correct;
+  document.getElementById('sIncorrect').textContent = incorrect;
+  document.getElementById('sRemaining').textContent = remaining;
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressPct').textContent = pct + '%';
+}
+
+function buildQNav() {
+  const grid = document.getElementById('qnavGrid');
+  grid.innerHTML = '';
+  for (let i = 0; i < TOTAL; i++) {
+    const btn = document.createElement('button');
+    btn.className = 'qnav-btn';
+    btn.textContent = i + 1;
+    btn.onclick = () => goToQuestion(i);
+    btn.id = `qnav-${i}`;
+    grid.appendChild(btn);
+  }
+}
+function updateQNav() {
+  for (let i = 0; i < TOTAL; i++) {
+    const btn = document.getElementById(`qnav-${i}`);
+    if (!btn) continue;
+    btn.className = 'qnav-btn';
+    if (i === currentQ) btn.classList.add('current');
+    else if (answers[i] === 'correct') btn.classList.add('correct');
+    else if (answers[i] === 'incorrect') btn.classList.add('incorrect');
+  }
+}
+
+/* ══════════════════════════════════════════
+   RESULTS, ANIMATION & TABLE
+══════════════════════════════════════════ */
+function showResults() {
+  clearInterval(timerInterval);
+  const correct = answers.filter(a => a === 'correct').length;
+  const incorrect = answers.filter(a => a === 'incorrect').length;
+  const skipped = answers.filter(a => a === null).length;
+  const finalPct = Math.round((correct / TOTAL) * 100) || 0;
+
+  document.getElementById('questionWrapper').style.display = 'none';
+  document.getElementById('navBar').style.display = 'none';
+
+  const rs = document.getElementById('resultsScreen');
+  rs.classList.add('show');
+  
+  document.getElementById('rTotal').textContent = TOTAL;
+  document.getElementById('rCorrect').textContent = correct;
+  document.getElementById('rIncorrect').textContent = incorrect;
+  document.getElementById('rSkipped').textContent = skipped;
+
+  let grade = finalPct >= 80 ? '🏆 Excellent!' : finalPct >= 60 ? '👍 Good Performance!' : finalPct >= 40 ? '📚 Needs Improvement' : '💪 Keep Practicing!';
+  rs.querySelector('.result-title').textContent = grade;
+
+  // Render Detailed Table
+  const tbody = document.getElementById('results-tbody');
+  tbody.innerHTML = '';
+  questions.forEach((q, i) => {
+    const status = answers[i];
+    const userAns = status === null ? '—' : q.opts[userChoices[i]];
+    const correctAns = q.opts[q.ans];
+    
+    let badge = status === null ? `<span class="status-badge badge-skipped">— Skipped</span>` : 
+                status === 'correct' ? `<span class="status-badge badge-correct">✓ Correct</span>` : 
+                `<span class="status-badge badge-wrong">✗ Wrong</span>`;
+    
+    let userColor = status === null ? 'var(--muted)' : status === 'correct' ? 'var(--green)' : 'var(--red)';
+    
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${i + 1}</td>
+      <td><span style="font-weight:700;color:var(--blue);font-size:0.75rem">${q.cat}</span></td>
+      <td>${q.q}</td>
+      <td style="color:${userColor}; font-weight:600">${userAns}</td>
+      <td style="color:var(--green); font-weight:600">${correctAns}</td>
+      <td>${badge}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // Animated Score Counter
+  let currentPct = 0;
+  const stepTime = 20; 
+  const duration = 1200; 
+  const steps = duration / stepTime;
+  const increment = finalPct / steps;
+
+  if (finalPct === 0) {
+    document.getElementById('scoreCircle').style.setProperty('--pct', 0);
+    document.getElementById('resultPct').textContent = '0%';
+    return;
+  }
+
+  const animationTimer = setInterval(() => {
+    currentPct += increment;
+    if (currentPct >= finalPct) {
+      currentPct = finalPct;
+      clearInterval(animationTimer);
+    }
+    document.getElementById('scoreCircle').style.setProperty('--pct', currentPct);
+    document.getElementById('resultPct').textContent = Math.round(currentPct) + '%';
+  }, stepTime);
+}
+
+/* ══════════════════════════════════════════
+   EXPORT TO EXCEL (CSV)
+══════════════════════════════════════════ */
+function exportWrongToExcel() {
+  const wrongQuestions = questions.filter((q, i) => answers[i] === 'incorrect');
+  
+  if (wrongQuestions.length === 0) {
+    alert('🎉 Congratulations! You have no wrong answers to export.');
+    return;
+  }
+
+  const escape = str => `"${String(str).replace(/"/g, '""')}"`;
+  const headers = ['Category', 'Question', 'Your Answer', 'Correct Answer', 'Explanation'];
+  
+  const rows = wrongQuestions.map(q => {
+    const originalIndex = questions.indexOf(q);
+    const userAns = q.opts[userChoices[originalIndex]];
+    const correctAns = q.opts[q.ans];
+    return [q.cat, q.q, userAns, correctAns, q.exp].map(escape);
+  });
+
+  const csvContent = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Revision_Wrong_Answers.csv';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function restartTest() { init(); }
+
+/* START */
+init();
+</script>
+</body>
+</html>
